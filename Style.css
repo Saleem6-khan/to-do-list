@@ -1,0 +1,149 @@
+:root{
+    --background:#000430;
+    --SecondaryBackground:#171c48;
+    --text:#fff;
+    --purple:#828dff;
+    --teal:#24feee;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background);
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 120px auto 0 auto;
+    max-width: 600px;
+    color: var(--text);
+}
+.states-container{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--purple);
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 500px;
+}
+
+#numbers{
+    height: 100px;
+    width: 100px;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.details{
+    width: 100%;
+}
+#progress{
+    width: 100%;
+    height: 10px;
+    background-color: var(--SecondaryBackground);
+    border-radius: 5px;
+    margin-top: 20px;
+    
+}
+#prograss-bar{
+    height: 10px;
+    width: 0;
+    background-color: var(--teal);
+    border-radius: 10px;
+       transition: all 0.3s ease;
+}
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    outline: none;
+}
+input{
+    flex: 1;
+    padding: 16px;
+    background-color: var(--SecondaryBackground);
+    border-radius: 10px;
+    border: 1px solid var(--purple);
+    outline: none;
+    color: var(--text);
+    outline: none;
+}
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple);
+    color: var(--text);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    
+
+}
+button:hover{
+    cursor: pointer;
+}
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px ;
+    width: 100%;    
+    list-style: none;
+    width: 100%;
+    margin-right: 69px;
+}
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.task input{
+width: 20px;
+height: 20px;
+
+}
+.taskitem{
+    display: flex;
+    background-color: var(--SecondaryBackground);
+    padding: 10px;
+   border-radius: 10px;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+    margin: 20px auto ;
+    width: 100%;
+    max-width: 500px;
+
+}
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+
+}
+
+.completed p{
+    color: var(--teal);
+}
+.taskitem img{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
